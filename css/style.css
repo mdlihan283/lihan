@@ -56,8 +56,15 @@ html {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
-  background: -webkit-gradient( linear, left top, left bottom, from(#00ffe5), to(var(--praimary)));
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#00ffe5),
+    to(var(--praimary))
+  );
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+    inset -2px -2px -2px rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -84,7 +91,12 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
@@ -95,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #000 url("../img/logo/loader.gif");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 40%;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -233,7 +245,8 @@ li#dropDown a:hover i {
 /* ===========================start slider section=========================== */
 
 #homeSlider {
-  background: linear-gradient(to right, transparent, var(--praimary)), url(../img/slide-1.jpeg);
+  background: linear-gradient(to right, transparent, var(--praimary)),
+    url(../img/slide-1.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -243,7 +256,8 @@ li#dropDown a:hover i {
 }
 
 .homeSliderDark {
-  background: linear-gradient(to right, transparent, var(--listColor)), url(../img/slide-2.jpeg) !important;
+  background: linear-gradient(to right, transparent, var(--listColor)),
+    url(../img/slide-2.jpeg) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
@@ -343,11 +357,13 @@ li#dropDown a:hover i {
   -o-transition: 0.3s;
 }
 
-.sliderWrapper .slick-next:before, .sliderWrapper .slick-prev:before {
+.sliderWrapper .slick-next:before,
+.sliderWrapper .slick-prev:before {
   font-size: 30px;
 }
 
-.sliderWrapper .slick-next, .sliderWrapper .slick-prev {
+.sliderWrapper .slick-next,
+.sliderWrapper .slick-prev {
   top: 82%;
 }
 
@@ -543,7 +559,13 @@ section#myAbout .aboutWrapper .column.right p {
 }
 
 .rainbow:hover {
-  background-image: linear-gradient( 90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
   animation: slidebg 5s linear infinite;
 }
 
@@ -697,7 +719,8 @@ section#certificate {
 /* =========================start hireMe style================================ */
 
 #hireMe {
-  background: linear-gradient(to right, transparent, var(--praimary)), url(../img/hireMe/hireMe.jpg);
+  background: linear-gradient(to right, transparent, var(--praimary)),
+    url(../img/hireMe/hireMe.jpg);
   background-repeat: no-repeat;
   background-position: center 35%;
   background-size: cover;
@@ -1106,7 +1129,7 @@ section#testimonial {
   text-align: center !important;
 }
 
-#gallery .portfolioWrapper .singlePortfolio{
+#gallery .portfolioWrapper .singlePortfolio {
   margin-bottom: 30px;
 }
 
