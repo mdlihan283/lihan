@@ -1,8 +1,9 @@
 // loader
-const loader = document.querySelector(".loader");
-window.addEventListener("load", function () {
+const loader = document.getElementById("loader");
+window.onload = () => {
   loader.style.display = "none";
-});
+};
+
 // =================carosel=============
 $(".sliderWrapper").slick({
   slidesToShow: 1,
@@ -90,9 +91,9 @@ $(document).ready(function () {
         // If svg.radial-progress is approximately 25% vertically into the window when scrolling from the top or the bottom
         if (
           $(window).scrollTop() >
-          $(this).offset().top - $(window).height() * 0.75 &&
+            $(this).offset().top - $(window).height() * 0.75 &&
           $(window).scrollTop() <
-          $(this).offset().top + $(this).height() - $(window).height() * 0.25
+            $(this).offset().top + $(this).height() - $(window).height() * 0.25
         ) {
           // Get percentage of progress
           percent = $(value).data("percentage");
@@ -158,6 +159,6 @@ var typed = new Typed(".typing", {
 });
 
 // contextmenu disable
-document.addEventListener("contextmenu",function(e){
-   e.preventDefault();
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
 });
