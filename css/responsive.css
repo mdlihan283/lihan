@@ -1,8 +1,7 @@
 @media (max-width: 1025px) {
-  .loader {
-    background-size: 90% !important;
+  #loader img {
+    width: 100px !important;
   }
-
   .container {
     width: 100% !important;
   }
